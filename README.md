@@ -116,7 +116,7 @@ The synthetic result tests implementation behavior under its construction. It is
 | `docs/FIGURE_INDEX.md` | scientific-figure provenance and interpretation limits |
 | `docs/source-audit` | formula/code provenance and pair-universe contract |
 | `docs/source-results` | small aggregate validation artifacts |
-| `scripts/generate_figures.py` | deterministic project-figure generator |
+| `scripts/generate_figures.py` | source-backed validation-figure generator |
 | `site` | static project site published by GitHub Pages |
 | `CINCH_DEV2_FREEZE.yaml` | machine-readable scientific and release contract |
 

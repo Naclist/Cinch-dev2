@@ -30,3 +30,5 @@ Both public composites are retained so none of the three panels is lost.
 - `FIG03_DIFF_GWES_VALIDATION` is regenerated from `docs/source-results/shc_diff_gwes_validation_summary.json` and remains available as an implementation-validation figure, but it is not the primary biological result display.
 
 The copied scientific figures are frozen artifacts. Regeneration belongs to their source analysis scripts in the local Leca workflow snapshots; `scripts/generate_figures.py` only regenerates compact validation summaries from retained aggregate tables.
+
+Raster/SVG bytes are not asserted equal across operating systems, Python versions, Matplotlib versions, or font-rendering libraries. The CI contract checks the numerical tests, frozen source hashes, successful figure generation, and presence of every expected output; scientific values come from the retained source tables rather than image bytes.

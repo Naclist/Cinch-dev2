@@ -22,5 +22,11 @@ jobs:
       - run: cinch-dev2 verify
       - run: cinch-dev2 list
       - run: python scripts/generate_figures.py
-      - run: git diff --exit-code -- docs/figures site/assets
-
+      - name: Check generated validation figures
+        run: |
+          test -s docs/figures/FIG02_EPIDIS_VALIDATION.png
+          test -s docs/figures/FIG02_EPIDIS_VALIDATION.svg
+          test -s docs/figures/FIG03_DIFF_GWES_VALIDATION.png
+          test -s docs/figures/FIG03_DIFF_GWES_VALIDATION.svg
+          test -s site/assets/FIG02_EPIDIS_VALIDATION.png
+          test -s site/assets/FIG03_DIFF_GWES_VALIDATION.png
