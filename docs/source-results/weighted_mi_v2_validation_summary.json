@@ -1,0 +1,15 @@
+{
+  "n_rows": 2609249,
+  "n_unique_pairs": 2609249,
+  "n_loci": 3279,
+  "null_cells_requested_fields": 0,
+  "mi_min": 3.695341964177816e-14,
+  "mi_max": 0.6931381034558749,
+  "nmi_min": 6.286170994442157e-14,
+  "nmi_max": 1.0000000000000009,
+  "frequency_weight_unique": 1,
+  "max_abs_frequency_weighted_mi_minus_mi": 0.0,
+  "max_abs_gene1_frequency_sum_minus_1": 2.220446049250313e-16,
+  "max_abs_gene2_frequency_sum_minus_1": 2.220446049250313e-16,
+  "all_checks_pass": true
+}

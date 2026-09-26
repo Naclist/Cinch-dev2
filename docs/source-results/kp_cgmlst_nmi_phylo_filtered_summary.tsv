@@ -1,0 +1,2 @@
+n_genomes	n_core_genes	n_core_genes_before_exclusion	n_excluded_core_genes	gene_pairs_total	gene_pairs_with_positions	significant_pairs_q_le_cutoff	p_adj_cutoff	order_dist_threshold	bp_dist_threshold	distance_filtered_pairs	top_links_plotted	min_filtered_q	max_top20_nmi
+1000	3268	3632	364	5335011	5335011	5329606	0.05	50.09	105585.9	5087419	20	0.0	0.9448636174201965

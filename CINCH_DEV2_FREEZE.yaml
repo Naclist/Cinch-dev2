@@ -1,0 +1,32 @@
+schema: CINCH_DEV2_FREEZE
+version: 0.1.0-dev
+status: research_preview
+scientific_boundary: candidate statistical dependencies, not molecular causality
+input_contract:
+  primary: genome_by_locus allele profile plus frozen pair universe
+  frozen_presence_rule: value > 0 is present; non-positive or missing is absence/non-callable
+  limitation: biological absence and non-callability are not separated in the frozen local profile
+statistics:
+  weighted_mi_v2:
+    log_base: natural
+    pseudocount: false
+    nmi: 2*MI/(H_X+H_Y)
+  epidis:
+    log_base: 2
+    identity: EpiDis^2 = MI_bits = MI_nats/ln(2)
+    epsilon: 1.0e-27
+  shc:
+    null: permute within informative stable hierarchical clusters
+    p_value: (1 + count(null >= observed))/(B + 1)
+    multiplicity: Benjamini-Hochberg
+  aracne:
+    role: post-test topology pruning
+  diff_gwes:
+    estimand: I(A;B|SHC,C=1) - I(A;B|SHC,C=0)
+release_policy:
+  demo_data_included: false
+  raw_research_data_included: false
+  raw_conversations_included: false
+  aggregate_validation_results_included: true
+  external_mapping_modules_bundled: false
+

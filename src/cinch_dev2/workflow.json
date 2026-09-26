@@ -1,0 +1,293 @@
+{
+  "schema": "cinch.dev2.workflow",
+  "schema_version": "2.0.0-dev",
+  "name": "Cinch dev2",
+  "scientific_boundary": "Candidate statistical dependencies; not molecular causality",
+  "stages": [
+    {
+      "id": "01-significant-ordination",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Significant r2 PCA and UMAP"
+    },
+    {
+      "id": "02-distance-decay",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Distance decay and elbow filtering"
+    },
+    {
+      "id": "03-qq",
+      "track": "historical",
+      "status": "frozen",
+      "name": "QQ calibration diagnostics"
+    },
+    {
+      "id": "04-sign-aware-phylogeny",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Sign-aware phylogeny diagnostic"
+    },
+    {
+      "id": "05-order-bp-pca",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Order/BP PCA, K-means, and Venn"
+    },
+    {
+      "id": "06-pcoa-metadata",
+      "track": "historical",
+      "status": "frozen",
+      "name": "PCoA and gene-metadata association"
+    },
+    {
+      "id": "07-rda-arrows",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Metadata arrow projections"
+    },
+    {
+      "id": "08-nmds-constrained-rda",
+      "track": "historical",
+      "status": "frozen",
+      "name": "NMDS and constrained RDA"
+    },
+    {
+      "id": "09-population-pca",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Genome-presence population PCA"
+    },
+    {
+      "id": "10-cluster-annotation",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Cluster annotation and tree heatmaps"
+    },
+    {
+      "id": "10b-cluster-geography",
+      "track": "historical",
+      "status": "validated",
+      "name": "Selected-cluster geographic associations"
+    },
+    {
+      "id": "11-cgmlst-allelic-scan",
+      "track": "historical",
+      "status": "frozen",
+      "name": "cgMLST allele-state association"
+    },
+    {
+      "id": "12-cgmlst-gene-nmi",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Parallel multiallelic cgMLST NMI"
+    },
+    {
+      "id": "13-gene-phylo-mixing",
+      "track": "historical",
+      "status": "validated",
+      "name": "Allele diversity versus same-allele tree distance"
+    },
+    {
+      "id": "14-cgmlst-phylo-filtered",
+      "track": "historical",
+      "status": "frozen",
+      "name": "Lineage-strong-gene-excluded NMI"
+    },
+    {
+      "id": "15-profile-similarity",
+      "track": "extension",
+      "status": "frozen",
+      "name": "wg/cg similarity and sample weights"
+    },
+    {
+      "id": "16-old-weighted-mi",
+      "track": "extension",
+      "status": "frozen",
+      "name": "Pseudocount weighted MI comparator"
+    },
+    {
+      "id": "17-mi-distance-visuals",
+      "track": "extension",
+      "status": "frozen",
+      "name": "MI/NMI distance diagnostics"
+    },
+    {
+      "id": "18-weighted-mi-v2",
+      "track": "extension",
+      "status": "validated",
+      "name": "Exact weighted MI v2"
+    },
+    {
+      "id": "19-pairwise-epidis",
+      "track": "extension",
+      "status": "validated",
+      "name": "Pairwise EpiDis"
+    },
+    {
+      "id": "20-epidis-visuals",
+      "track": "extension",
+      "status": "validated",
+      "name": "EpiDis comparison figures"
+    },
+    {
+      "id": "21-shc-correction",
+      "track": "extension",
+      "status": "validated",
+      "name": "SHC-conditioned permutation, BH, and ARACNE"
+    },
+    {
+      "id": "22-diff-gwes",
+      "track": "high-order",
+      "status": "validated-standalone",
+      "runner": "scripts/snapshots/shc_diff_gwes/run_diff_gwes.py",
+      "name": "SHC-conditioned differential-background GWES"
+    }
+  ],
+  "frozen_files": [
+    {
+      "path": "core/statistics.py",
+      "sha256": "ac862dcb44c79b980c7d9ffea4bcdfc2f49dd66daf2a92dfa2d147f5b2f49d9a"
+    },
+    {
+      "path": "scripts/cinch_pipeline.py",
+      "sha256": "9fa57abcda8bb0eb5dd86ea98119c5a5d851237dd3fa2d3e783035730eabd842"
+    },
+    {
+      "path": "scripts/snapshots/Cinch_v8.py",
+      "sha256": "9ae19323e665de20350e14cfb24572c9dd13ecf52d58a37d3e85c601c79304b8"
+    },
+    {
+      "path": "scripts/snapshots/__init__.py",
+      "sha256": "8a44a570864361054fb1154e364de1deeab5483ac98a62c5e9237c072f373e85"
+    },
+    {
+      "path": "scripts/snapshots/add_metadata_rda_arrows.py",
+      "sha256": "cb49be02f1ec6ebf62c87b2f2ae46ccffa3ac6cd71ea19d4c31493756ba1dcf1"
+    },
+    {
+      "path": "scripts/snapshots/allele_diversity_phylo_mixing/allele_diversity_phylo_mixing.py",
+      "sha256": "fa00f8be39a1b7fade9c6040ee78940d5ef678c426684da2e1dc0715ff109041"
+    },
+    {
+      "path": "scripts/snapshots/allele_diversity_phylo_mixing/model_turnover_baseline.py",
+      "sha256": "4460245688024ea5e74fc748c93b7ccc04b95d8e0d50db075761a45d5bb3a3b3"
+    },
+    {
+      "path": "scripts/snapshots/allele_diversity_phylo_mixing/plot_hgt_colored_turnover.py",
+      "sha256": "4afeced83611bca304559d1f24e5c3e0af9330d081552ab1d1c3a5651fbb5536"
+    },
+    {
+      "path": "scripts/snapshots/allele_diversity_phylo_mixing/run_top_species_complex.py",
+      "sha256": "96bf6b0a3ae507802d150b3636e43a428f66f1e7d4123af4309e4197ea11bc3e"
+    },
+    {
+      "path": "scripts/snapshots/cgmlst_allelic_scan.py",
+      "sha256": "a348834e5ec302a992b3b920d87759d8c64425ae7f4e2df4b319f7c860222738"
+    },
+    {
+      "path": "scripts/snapshots/cgmlst_gene_gene_nmi_distance.py",
+      "sha256": "88298423f8474ff84c88374663e69b54076e7a3aaa40b2e49701a5dc34c57411"
+    },
+    {
+      "path": "scripts/snapshots/cluster3_annotation_and_tree_heatmap.py",
+      "sha256": "93e279c062623b3ef51d9d0b438faf567937d7168eb235318bfa42f6db69971c"
+    },
+    {
+      "path": "scripts/snapshots/compare_order_bp_phylo_pca_venn.py",
+      "sha256": "0a7962b1cb23896830ddcf38934f096309c9585ef9d0ba834f612c059bb6bb4f"
+    },
+    {
+      "path": "scripts/snapshots/epidis_pairwise_kp.py",
+      "sha256": "445f94ab7fe118069acbb74f9263efb8b60d33cd7d868f2f2e1b23a325f37f30"
+    },
+    {
+      "path": "scripts/snapshots/gene_phylo_mixing_metrics.py",
+      "sha256": "541ef07195ed99938a78973976a475c0406e8e04b1761cd33dff2d2c4bcf060b"
+    },
+    {
+      "path": "scripts/snapshots/hiercc_shc_phylo_correct_mi.py",
+      "sha256": "143e4bcf960f3630356b3e2ab184dd6fcfb878d6c30e1386b3a906619c73e27d"
+    },
+    {
+      "path": "scripts/snapshots/nmds_and_constrained_rda.py",
+      "sha256": "e344fc2cbde4c916ac9ddc193d76209b090594b5d18cdebb075c36f0e7bfc049"
+    },
+    {
+      "path": "scripts/snapshots/pcoa_and_gene_metadata_assoc.py",
+      "sha256": "1472e17b917aa9c6ab5470b9eca305b29c7311acf1a915816fa9c67b8ad32b42"
+    },
+    {
+      "path": "scripts/snapshots/plot_epidis_pairwise_kp.py",
+      "sha256": "952bdb2e2a5cb5250d6b90fca4f36175373d79174d6fcc96dca1b6f96402df3f"
+    },
+    {
+      "path": "scripts/snapshots/plot_r2_significant_pca_umap.py",
+      "sha256": "12daf87a74b185d78d4fbd3a06014889089b21cf88ed7eae30a1db1726699998"
+    },
+    {
+      "path": "scripts/snapshots/plot_wgmlst_mi_nmi_distance.py",
+      "sha256": "93a5deb769991ef631d4026562bb0a0ab24ae44f41be43ad8e011feab8aab7f9"
+    },
+    {
+      "path": "scripts/snapshots/profile_population_pca.py",
+      "sha256": "18d2e0461beb3d1401a365f6544b5ca205c2aa59a3e93eb993930f4f03ffe906"
+    },
+    {
+      "path": "scripts/snapshots/profile_wg_cg_similarity.py",
+      "sha256": "64043016c41d4e6130dbe8a87ad06b8b4874ba67bf87074d11dfee5bd16ea30c"
+    },
+    {
+      "path": "scripts/snapshots/qq_plots_ldlike.py",
+      "sha256": "a4bb45c20d2d83d901aacde5cf9d7eefd0f3cb3365db4ca018de27658a6b71f1"
+    },
+    {
+      "path": "scripts/snapshots/secondary_filter_ld_decay.py",
+      "sha256": "475051b378ca520bfe5757f0e2b711a6f923c775d6d830e1704e5318673a8438"
+    },
+    {
+      "path": "scripts/snapshots/selected_cluster_geography_association.py",
+      "sha256": "1fa8ef3b1d134a02ade45c0b7edc37f61bdca0210a28cd5118cb54ef34a0e01c"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/inject_toy_epistasis.py",
+      "sha256": "32bf90659399979e0c6dc9f33538203c99bc6c35cd39a91c0f6081080cffb81b"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/plot_diff_gwes.py",
+      "sha256": "1cd2afa60a5be7b1fb54c5894932c3c55bf524bbccd294ef0c7f185a616f9031"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/plot_pairwise_order_mi_shc.py",
+      "sha256": "3edbd8dc80f98687cddd4d3f7439d13e25adc1b89a9e0cde9f736ab5e364043f"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/plot_phandango_presence.py",
+      "sha256": "8df10ba50166571a798d94a16a132150ee3adf5117b4f1266812569e8ad9d63d"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/plot_true_communities.py",
+      "sha256": "8245cd847689ea6a1fc9da3567a7f410620b38f111e6409185b5546e68952633"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/prepare_inputs.py",
+      "sha256": "538f5b5924bb3afe355b200ad15c814140d4c4bfa0a7c29021bb858aa7fa236f"
+    },
+    {
+      "path": "scripts/snapshots/shc_diff_gwes/run_diff_gwes.py",
+      "sha256": "a65a218623fac1ee50e0aea6e1c4b79cbbdea1a9935a7f6493b7c3d9ce854377"
+    },
+    {
+      "path": "scripts/snapshots/sign_specific_phylo_filter_check.py",
+      "sha256": "bdf3ef76779ced3afa88246d6adbd7897338c0940ec09797421883c8d77a5479"
+    },
+    {
+      "path": "scripts/snapshots/spydrpick_locus_wg_nmi.py",
+      "sha256": "ea7fa5295631d26faf8269f438ca2c8dc4221e40c3adcfd4a74aec48fd1676fd"
+    },
+    {
+      "path": "scripts/snapshots/weighted_mi_v2.py",
+      "sha256": "43c99c0466c525ec3eb32c1fd2f67ebc78529eb486fb95929f48f4784260740b"
+    }
+  ]
+}

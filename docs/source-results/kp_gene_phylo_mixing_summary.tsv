@@ -1,0 +1,2 @@
+n_genomes	n_core_genes_evaluated	all_genome_pair_mean_tree_distance	min_allele_count	lineage_quantile	lineage_threshold_same_allele_tree_distance	n_lineage_strong_genes	mixed_quantile	mixed_threshold_same_allele_tree_distance	n_mixed_high_genes	vertical_layers	layer_method	layer_bins	hist_bins
+1000	3632	0.006932911463081837	20	0.1	0.0003715205670661577	364	0.9	0.004731599121000777	364	3	local_valley_boundary	72	1000

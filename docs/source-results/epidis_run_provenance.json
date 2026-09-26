@@ -1,0 +1,23 @@
+{
+  "method": "thesis-literal EpiDis equations 2-8 through 2-14",
+  "profile": "Leca/source/profile/0427_1.profile",
+  "profile_sha256": "1a68efb08072160746a6343edb54578f9ea62eb48238f847752bb6e52a4cf808",
+  "pairs": "Leca/source/profile/0427_1.ldlike_pairs.tsv.gz",
+  "pairs_sha256": "0053c6c693d78420ea7591a4f2069dbc2d721e7ecd3a992d094e941cc239f318",
+  "weights": "Leca/results/profile_similarity/wg_cg_profile_0427_1/spydrpick_style_sample_weights.tsv",
+  "weights_sha256": "8d5d4fe18ec1a6be65e78f97ef3aa89c6b74dd703440484576bbf6d159cd318b",
+  "binary_encoding": "profile value > 0 is presence 1; all other values are absence/non-call 0",
+  "pair_universe": "frozen 3,279 loci and 2,609,249 pairs",
+  "sample_weight_column": "wg_content_hamming_weight",
+  "sample_weight_tau": 0.1,
+  "sample_weight_raw_sum": 7.018345816846755,
+  "sample_weight_normalized_sum": 1.0,
+  "epsilon": 1e-27,
+  "epsilon_post_addition_renormalized": false,
+  "log_base": 2,
+  "direction_rule": "compute both directions; report mean after tolerance validation",
+  "threshold": "all valid pair scores; Q3 + 2*1.5*IQR = Q3 + 3*IQR",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

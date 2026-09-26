@@ -1,0 +1,2 @@
+n_genomes	n_loci	n_pairs	n_valid_epidis	n_undefined_epidis	epidis_min	epidis_median	epidis_mean	epidis_max	max_direction_absolute_difference	iqr_threshold	n_iqr_outliers	iqr_outlier_fraction
+1000	3279	2609249	2609249	0	2.3095417906209117e-07	0.1178323812623859	0.15238904206705234	0.9999934522320495	1.8206777849789626e-10	0.684741012905513	15888	0.006089108398623512

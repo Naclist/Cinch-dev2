@@ -1,0 +1,17 @@
+{
+  "true_rows": 625,
+  "true_eligible": 351,
+  "true_significant": 0,
+  "true_min_q": 0.5383435582822086,
+  "toy_rows": 1145,
+  "toy_eligible": 760,
+  "toy_significant": 20,
+  "toy_truth_n": 20,
+  "toy_truth_pass": 20,
+  "toy_negative_n": 20,
+  "toy_negative_pass": 0,
+  "toy_nontruth_pass": 0,
+  "synthetic_pairwise_pass": 20,
+  "true_unique_hypotheses": true,
+  "toy_unique_hypotheses": true
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cinch dev2 phylogeny-aware information-theoretic dependency discovery">
+  <title>Cinch dev2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><a class="brand" href="#top">Cinch <span>dev2</span></a><div><a href="#method">Method</a><a href="#evidence">Evidence</a><a href="#software">Software</a><a href="https://github.com/Naclist/Cinch-dev2">GitHub</a></div></nav>
+    <div class="hero-grid" id="top">
+      <div>
+        <p class="eyebrow">RESEARCH PREVIEW</p>
+        <h1>Dependency discovery without collapsing the evidence layers.</h1>
+        <p class="lede">Fast locus-level information kernels, explicit physical-linkage diagnostics, SHC-preserving inference, and a held-out high-order extension.</p>
+        <div class="actions"><a class="button primary" href="https://github.com/Naclist/Cinch-dev2">Source</a><a class="button" href="#boundary">Interpretation boundary</a></div>
+      </div>
+      <div class="metric-panel" aria-label="Frozen Kp audit summary">
+        <div><strong>1,000</strong><span>genomes</span></div>
+        <div><strong>3,279</strong><span>pair-universe loci</span></div>
+        <div><strong>2.61M</strong><span>tested pairs</span></div>
+        <div><strong>23</strong><span>registered stage records</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="method">
+      <div class="section-head"><p class="eyebrow">PAIRWISE RESULTS</p><h2>EpiDis, MI and genomic distance.</h2></div>
+      <figure><img src="assets/results/SCI01_EPIDIS_OVERVIEW.png" alt="EpiDis distribution, its identity with weighted mutual information, and its relation to gene-order and physical distance"><figcaption>Frozen Kp analysis across 2,609,249 locus pairs.</figcaption></figure>
+    </section>
+
+    <section id="evidence" class="tint">
+      <div class="section-head"><p class="eyebrow">FROZEN EVIDENCE</p><h2>Pairwise EpiDis does not create a new ranking.</h2><p>The frozen implementation verifies the exact identity between squared EpiDis and weighted MI in bits.</p></div>
+      <figure><img src="assets/FIG02_EPIDIS_VALIDATION.svg" alt="Pearson and Spearman correlations comparing EpiDis with weighted MI variants"><figcaption>Correlations use 2,609,249 frozen Kp locus pairs.</figcaption></figure>
+      <figure><img src="assets/results/SCI03_MI_NMI_DISTANCE_COMPARISON.png" alt="Weighted MI and normalized MI compared over gene-order and physical distance"><figcaption>The two statistics expose different upper-tail selections.</figcaption></figure>
+      <figure><img src="assets/results/SCI04_SHC_CORRECTION_DIAGNOSTICS.png" alt="SHC stability, threshold selection, edge attrition, and raw versus conditional mutual information"><figcaption>Population-structure correction is shown as its own inferential layer.</figcaption></figure>
+      <figure><img src="assets/results/SCI05_ALLELE_DIVERSITY_PHYLO_MIXING.png" alt="Per-gene allele diversity on the y axis against mean phylogenetic distance among genomes sharing the same allele on the x axis"><figcaption>Requested endpoint: allele diversity versus same-allele phylogenetic mixing.</figcaption></figure>
+      <figure><img src="assets/results/SCI06_DIFF_GWES_ATTRITION.png" alt="SHC-conditioned Diff-GWES hypothesis attrition in natural and positive-control data"><figcaption>Positive controls validate implementation behavior; natural-data results remain separate.</figcaption></figure>
+      <figure><img src="assets/results/SCI08_PUBLIC_CINCH_DISTANCE_MEAN_CURVES.png" alt="Public Cinch mean mutual information across phylogenetic tree, gene-order, and physical base-pair distance"><figcaption>Public Cinch distance panels: tree, order, and bp/physical distance.</figcaption></figure>
+    </section>
+
+    <section id="software">
+      <div class="section-head"><p class="eyebrow">SOFTWARE</p><h2>Local numerical core, release-grade shell.</h2></div>
+      <div class="cards">
+        <article><h3>Fast kernels</h3><p>Dense weighted joint matrices and Numba-parallel multiallelic pair scans replace one-task-per-pair Python loops.</p></article>
+        <article><h3>Frozen contracts</h3><p>State semantics, score definitions, thresholds, provenance and integrity hashes are machine readable.</p></article>
+        <article><h3>Auditable release</h3><p>Installable package, CLI, CI, deterministic figures and structured documentation.</p></article>
+      </div>
+      <pre><code>python -m pip install -e ".[test]"
+pytest
+cinch-dev2 verify
+cinch-dev2 list</code></pre>
+    </section>
+
+    <section id="boundary" class="boundary">
+      <p class="eyebrow">INTERPRETATION BOUNDARY</p>
+      <h2>A retained edge is a candidate statistical dependency.</h2>
+      <p>It is not, by itself, molecular epistasis, fitness interaction, causality, functional cooperation, or ecological competition. Physical linkage, lineage structure, multiple testing and network redundancy are different questions and remain different outputs.</p>
+    </section>
+  </main>
+  <footer><span>Cinch dev2 research preview</span><span>No redistribution license selected</span></footer>
+</body>
+</html>
